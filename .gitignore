@@ -1,0 +1,28 @@
+# =========================
+# Frontend
+# =========================
+Auth-app-frontend/**/node_modules/
+Auth-app-frontend/**/dist/
+Auth-app-frontend/**/.env
+Auth-app-frontend/**/.env.local
+
+# =========================
+# Backend
+# =========================
+Auth-app-backend/**/target/
+Auth-app-backend/**/.mvn/
+Auth-app-backend/**/.env
+Auth-app-backend/**/*.log
+
+# IntelliJ
+.idea/
+
+# VS Code
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

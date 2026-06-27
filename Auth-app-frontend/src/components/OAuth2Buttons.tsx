@@ -1,0 +1,41 @@
+import { Button } from "./ui/button";
+import { FaGoogle, FaGithub } from "react-icons/fa";
+import { NavLink } from "react-router";
+
+function OAuth2Buttons() {
+  return (
+    <div className="space-y-3">
+      <NavLink
+        to={`${
+          import.meta.env.VITE_BASE_URL || "https://globalauthbackend.onrender.com"
+        }/oauth2/authorization/google`}
+        className={"block"}
+      >
+        <Button
+          type="button"
+          variant="outline"
+          className="w-full cursor-pointer flex items-center gap-3 rounded-2xl"
+        >
+          <FaGoogle className="w-5 h-5" /> Continue with Google
+        </Button>
+      </NavLink>
+
+      <NavLink
+        to={`${
+          import.meta.env.VITE_BASE_URL || "https://globalauthbackend.onrender.com"
+        }/oauth2/authorization/github`}
+        className={"block"}
+      >
+        <Button
+          type="button"
+          variant="outline"
+          className="w-full flex cursor-pointer items-center gap-3 rounded-2xl"
+        >
+          <FaGithub className="w-5 h-5" /> Continue with GitHub
+        </Button>
+      </NavLink>
+    </div>
+  );
+}
+
+export default OAuth2Buttons;
