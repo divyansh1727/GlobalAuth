@@ -8,6 +8,10 @@
 │                                              │
 └──────────────────────────────────────────────┘
 
+![GitHub last commit](https://img.shields.io/github/last-commit/divyansh1727/GlobalAuth?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/divyansh1727/GlobalAuth?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/divyansh1727/GlobalAuth?style=for-the-badge)
+
 # 🌍 GlobalAuth
 
 ![Java](https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk)
@@ -121,13 +125,13 @@ The application follows industry-standard authentication practices using **Sprin
 ```text
 GlobalAuth
 │
-├── auth-frontend
+├── Auth-app-frontend
 │   ├── src
 │   ├── public
 │   ├── package.json
 │   └── vite.config.ts
 │
-├── auth-backend
+├── Auth-app-backend
 │   ├── src
 │   ├── pom.xml
 │   ├── Dockerfile
@@ -186,42 +190,49 @@ sequenceDiagram
 ## 📸 Application Screenshots
 
 ### 🏠 Home Page
+Modern Landing Page
 
 ![Home](screenshots/home.png)
 
 ---
 
 ### 🔑 Login
+Secure User Login
 
 ![Login](screenshots/login.png)
 
 ---
 
 ### 📝 Sign Up
+User Registration
 
 ![Sign Up](screenshots/signup.png)
 
 ---
 
 ### 📊 Dashboard
+User Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
 
 ---
 
 ### 👤 User Profile
+Profile Management
 
 ![Profile](screenshots/profile.png)
 
 ---
 
 ### 🖼️ Update Profile Picture
+Profile Picture Upload
 
 ![Update Profile Picture](screenshots/update-picture.png)
 
 ---
 
 ### 🗑️ Delete Account (Local User)
+Password Verification
 
 Users registered with email/password must confirm their password before deleting their account.
 
@@ -230,6 +241,7 @@ Users registered with email/password must confirm their password before deleting
 ---
 
 ### 🌐 Delete Account (OAuth User)
+OAuth Account Deletion
 
 Users authenticated with Google or GitHub can securely delete their account without entering a password.
 
@@ -272,7 +284,7 @@ cd GlobalAuth
 ### Frontend
 
 ```bash
-cd auth-frontend
+cd Auth-app-frontend
 npm install
 npm run dev
 ```
@@ -280,7 +292,7 @@ npm run dev
 ### Backend
 
 ```bash
-cd auth-backend
+cd Auth-app-backend
 ./mvnw spring-boot:run
 ```
 
